@@ -1,9 +1,9 @@
-import React from "react";
+import logo from "../raw/Logo.svg";
 
 function Header(props) {
   return (
     <header>
-      <p>img goes here</p>
+      <img src={logo} />
     </header>
   );
 }

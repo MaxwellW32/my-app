@@ -2,22 +2,22 @@ import React from "react";
 
 function Nav(props) {
   return (
-    <nav>
+    <nav id="topNav">
       <ul>
         <li>
-          <a>Home</a>
+          <a href="#">Home</a>
         </li>
         <li>
-          <a>Menu</a>
+          <a href="#">Menu</a>
         </li>
         <li>
-          <a>Reservations</a>
+          <a href="#">Reservations</a>
         </li>
         <li>
-          <a>Order Online</a>
+          <a href="#">Order Online</a>
         </li>
         <li>
-          <a>Login</a>
+          <a href="#">Login</a>
         </li>
       </ul>
     </nav>

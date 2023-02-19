@@ -1,0 +1,286 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* border: 1px solid red; */
+}
+
+img {
+  max-width: 100%;
+}
+
+/*end of reset*/
+
+#topCont {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#topNav {
+  display: flex;
+  align-items: center;
+}
+
+#topNav > ul {
+  margin-left: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+#topNav a {
+  color: black;
+}
+
+/******************************************* INTRO *********************************************************************/
+
+:root {
+  --primaryGreen: #495e57;
+  --primaryYellow: #f4ce14;
+  --secondaryOrange: #ee9972;
+  --secondaryPink: #fbdabb;
+  --highlightWhite: #edefee;
+  --highlightBlack: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#introSec {
+  background-color: var(--primaryGreen);
+  padding: 2rem;
+}
+
+#introCon {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, 1fr);
+}
+
+#introCon > div {
+  padding: 1rem;
+}
+
+#introCon > div:nth-of-type(2) {
+  background-image: url(https://images.pexels.com/photos/233305/pexels-photo-233305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+}
+
+.titleText {
+  color: var(--primaryYellow);
+  font-size: 40pt;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.subheadingText {
+  color: var(--highlightWhite);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.descText {
+  color: var(--highlightWhite);
+  font-family: roboto;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+#introCon button {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: var(--primaryYellow);
+  border: none;
+  margin-top: 2rem;
+  border-radius: 0.6rem;
+}
+/******************************************* SPECIALS *********************************************************************/
+#specialsSec {
+  padding: 2rem;
+}
+
+#specialsTitleCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.normalButton {
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+
+#menuItemsCont {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(250px, 1fr));
+  gap: 1.5rem;
+  overflow-x: scroll;
+}
+
+#menuItemsCont::-webkit-scrollbar {
+  display: none;
+}
+.menuItemCont {
+  height: 400px;
+  background-color: var(--highlightWhite);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4fr 1fr 4fr 1fr;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.spanAll {
+  grid-column: 1/-1;
+}
+
+.menuItemImages {
+  background-size: cover;
+  background-position: center;
+}
+
+.menuItemSubTitle {
+  align-self: center;
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 18pt;
+  white-space: nowrap;
+}
+
+.menuItemPrice {
+  margin: 1rem auto;
+  color: var(--secondaryOrange);
+}
+
+.menuItemDesc {
+  margin: 1rem;
+}
+
+.menuItemLinks {
+  margin: 1rem;
+  color: #000000;
+  font-weight: 400;
+}
+
+.deliveryCont {
+  display: flex;
+  align-items: center;
+}
+#orderIconTruck {
+  width: 1rem;
+}
+/******************************************* TESTIMONIAL *********************************************************************/
+
+#testimonialsSec {
+  background-color: var(--highlightWhite);
+  padding: 4rem;
+}
+
+.testimonialTitle {
+  text-align: center;
+}
+
+#testimonialsCont {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.tesCont {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+.tesImg {
+  align-self: center;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.tesPersName {
+  font-size: 1rem;
+  align-self: center;
+}
+.tesOpinion {
+  color: #000000;
+}
+/******************************************* ABOUT *********************************************************************/
+#aboutSec {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+
+#aboutImgCont {
+  position: relative;
+}
+
+.aboutimgs {
+  position: relative;
+  max-width: 50%;
+  aspect-ratio: 0.7/1;
+  object-fit: cover;
+}
+
+#aboutImg1 {
+  left: 10%;
+  top: 30%;
+}
+
+#aboutImg2 {
+  right: 10%;
+}
+
+.aboutTitleText {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.aboutSubtitleText {
+  color: #000000;
+}
+
+.aboutDescText {
+  color: #000000;
+  font-weight: 400;
+}
+/******************************************* FOOTER *********************************************************************/
+
+#mainFooter {
+  background-color: var(--highlightWhite);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+}
+
+.footerLinkTitle {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.footerLink {
+  color: #000000;
+}

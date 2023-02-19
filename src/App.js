@@ -8,8 +8,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Header></Header>
-      <Nav></Nav>
+      <div id="topCont">
+        <Header></Header>
+        <Nav></Nav>
+      </div>
       <Main></Main>
       <Footer></Footer>
     </>
