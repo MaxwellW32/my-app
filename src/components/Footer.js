@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../raw/Logo.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Footer(props) {
   return (
@@ -10,29 +11,29 @@ function Footer(props) {
         <h3 className="footerLinkTitle">Doormat Navigation</h3>
         <ul>
           <li>
-            <a className="footerLink" href="#">
+            <Link className="footerLink" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footerLink" href="#">
+            <Link className="footerLink" to="menu">
               Menu
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footerLink" href="#">
+            <Link className="footerLink" to="reservations">
               Reservations
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footerLink" href="#">
+            <Link className="footerLink" to="order-online">
               Order Online
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footerLink" href="#">
+            <Link className="footerLink" to="login">
               Login
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
